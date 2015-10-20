@@ -1,0 +1,137 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="RPG.Model.Heroes.Hero">
+    <Position X="0.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQECAIBABgACgAAACgAAAACAQAAAAAhEEICYAAAAgA=</HashCode>
+      <FileName>Model\Heroes\Hero.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Spell.Spell">
+    <Position X="2.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAIAAAAAAAIAAAAQAAAAAAAAAEQAAAgAAAAA=</HashCode>
+      <FileName>Model\Spell\Spell.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.Tile" Collapsed="true">
+    <Position X="5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CCIAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAQAAAAAAYAQ=</HashCode>
+      <FileName>Model\Tiles\Tile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.BlueEnemyTile" Collapsed="true">
+    <Position X="8.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\BlueEnemyTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.EnemyTile" Collapsed="true">
+    <Position X="7" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAQIAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\EnemyTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.GreenEnemyTile" Collapsed="true">
+    <Position X="7" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\GreenEnemyTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.RedEnemyTile" Collapsed="true">
+    <Position X="8.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\RedEnemyTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.GoToBlueTile" Collapsed="true">
+    <Position X="5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\GoToBlueTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.GoToGreenTile" Collapsed="true">
+    <Position X="5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\GoToGreenTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.GoToRedTile" Collapsed="true">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\GoToRedTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.GrassTile" Collapsed="true">
+    <Position X="5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\GrassTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.PathTile" Collapsed="true">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\PathTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.RockTile" Collapsed="true">
+    <Position X="7" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Model\Tiles\RockTile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RPG.Model.Tiles.Map" Collapsed="true">
+    <Position X="2.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAECAAQ=</HashCode>
+      <FileName>Model\Tiles\Map.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="RPG.Model.Interfaces.ITile" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Model\Interfaces\ITile.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="RPG.Model.Enumerations.Affliction" Collapsed="true">
+    <Position X="10.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAEgAAA=</HashCode>
+      <FileName>Model\Enumerations\Affliction.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RPG.Model.Enumerations.CharacterMovement" Collapsed="true">
+    <Position X="10.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAACACEAAAAAAI=</HashCode>
+      <FileName>Model\Enumerations\CharacterMovement.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RPG.Model.Enumerations.SpellType" Collapsed="true">
+    <Position X="10.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAACAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Model\Enumerations\SpellType.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Enum Name="RPG.Model.Enumerations.TypesOfGroundTiles" Collapsed="true">
+    <Position X="10.5" Y="5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIgAAAAAAAAIIAEAAAAAAAACgAACACAABAAQAAgA=</HashCode>
+      <FileName>Model\Enumerations\TypesOfGroundTiles.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

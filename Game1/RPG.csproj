@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E119C362-02A1-41BF-991C-DD0887A0AE66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPG</RootNamespace>
+    <AssemblyName>Game1</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MonoGamePlatform>Windows</MonoGamePlatform>
+    <MonoGameContentBuilderExe>
+    </MonoGameContentBuilderExe>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Windows\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Windows\Release\</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Icon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>RPG.Controller.EntryPoint</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Controller\FirstRPG.cs" />
+    <Compile Include="Controller\EntryPoint.cs" />
+    <Compile Include="Controller\StateMachine.cs" />
+    <Compile Include="Controller\States\BattleState.cs" />
+    <Compile Include="Controller\States\CreditsState.cs" />
+    <Compile Include="Controller\States\EndTurnState.cs" />
+    <Compile Include="Controller\States\EnemyTurnState.cs" />
+    <Compile Include="Controller\States\FireMapState.cs" />
+    <Compile Include="Controller\States\GameOverState.cs" />
+    <Compile Include="Controller\States\GameState.cs" />
+    <Compile Include="Controller\States\IceMapState.cs" />
+    <Compile Include="Controller\States\InitialState.cs" />
+    <Compile Include="Controller\States\MenuSelectState.cs" />
+    <Compile Include="Controller\States\PoisonMapState.cs" />
+    <Compile Include="Controller\States\SchoolSelectState.cs" />
+    <Compile Include="Controller\States\State.cs" />
+    <Compile Include="Model\Enumerations\Affliction.cs" />
+    <Compile Include="Model\Enumerations\CharacterMovement.cs" />
+    <Compile Include="Model\Enumerations\SpellType.cs" />
+    <Compile Include="Model\Enumerations\TypesOfGroundTiles.cs" />
+    <Compile Include="Model\Heroes\Hero.cs" />
+    <Compile Include="Model\Interfaces\ITile.cs" />
+    <Compile Include="Model\Spell\Spell.cs" />
+    <Compile Include="Model\Tiles\BlueEnemyTile.cs" />
+    <Compile Include="Model\Tiles\EnemyTile.cs" />
+    <Compile Include="Model\Tiles\GoToBlueTile.cs" />
+    <Compile Include="Model\Tiles\GoToGreenTile.cs" />
+    <Compile Include="Model\Tiles\GoToRedTile.cs" />
+    <Compile Include="Model\Tiles\GrassTile.cs" />
+    <Compile Include="Model\Tiles\GreenEnemyTile.cs" />
+    <Compile Include="Model\Tiles\Map.cs" />
+    <Compile Include="Model\Tiles\PathTile.cs" />
+    <Compile Include="Model\Tiles\RedEnemyTile.cs" />
+    <Compile Include="Model\Tiles\RockTile.cs" />
+    <Compile Include="Model\Tiles\Tile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\Character.cs" />
+    <Compile Include="View\Renderers\AbstractRenderer.cs" />
+    <Compile Include="View\Renderers\MonoGameRenderer.cs" />
+    <Compile Include="View\UIInitializer.cs" />
+    <Compile Include="View\UI\Animation.cs" />
+    <Compile Include="View\UI\Background.cs" />
+    <Compile Include="View\UI\Button.cs" />
+    <Compile Include="View\UI\SpellAnimation.cs" />
+    <Compile Include="View\UI\SpellAnimationFactory.cs" />
+    <Compile Include="View\UI\Sprite.cs" />
+    <Compile Include="View\UI\TileImage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="MonoGame.Framework">
+      <HintPath>$(MSBuildProgramFiles32)\MonoGame\v3.0\Assemblies\Windows\MonoGame.Framework.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Content\background1.jpg" />
+    <Content Include="Content\background3.jpg" />
+    <Content Include="Content\BattleBackground.jpeg" />
+    <Content Include="Content\BattleSpellsWindow.png" />
+    <Content Include="Content\BigBlueMage.png" />
+    <Content Include="Content\BigGreenMage.png" />
+    <Content Include="Content\BigRedMage.png" />
+    <Content Include="Content\blackBG.jpg" />
+    <Content Include="Content\blue2.png" />
+    <Content Include="Content\BlueCastle.png" />
+    <Content Include="Content\BlueEnemyTile.png" />
+    <Content Include="Content\BlueMage.png" />
+    <Content Include="Content\blueMageSingle.png" />
+    <Content Include="Content\buttonBlue1.png" />
+    <Content Include="Content\buttonBlue2.png" />
+    <Content Include="Content\buttonBlue3.png" />
+    <Content Include="Content\buttonGreen1.png" />
+    <Content Include="Content\buttonGreen2.png" />
+    <Content Include="Content\buttonGreen3.png" />
+    <Content Include="Content\buttonRed1.png" />
+    <Content Include="Content\buttonRed2.png" />
+    <Content Include="Content\buttonRed3.png" />
+    <Content Include="Content\Buttons\endturn_button_active.png" />
+    <Content Include="Content\Buttons\endturn_button_hover.png" />
+    <Content Include="Content\Buttons\endturn_button_inactive.png" />
+    <Content Include="Content\Buttons\spell_button_active.png" />
+    <Content Include="Content\Buttons\spell_button_hover.png" />
+    <Content Include="Content\Buttons\spell_button_inactive.png" />
+    <Content Include="Content\creditsBackground.jpg" />
+    <Content Include="Content\CreditsSprite.png" />
+    <Content Include="Content\DecaySprite.png" />
+    <Content Include="Content\FireBoltSprite.png" />
+    <Content Include="Content\FireMap.txt" />
+    <Content Include="Content\FireShield.png" />
+    <Content Include="Content\GoToBlue.png" />
+    <Content Include="Content\GoToGreen.png" />
+    <Content Include="Content\GoToRed.png" />
+    <Content Include="Content\grassTile.jpg" />
+    <Content Include="Content\green2.png" />
+    <Content Include="Content\GreenCastle.png" />
+    <Content Include="Content\GreenEnemyTile.png" />
+    <Content Include="Content\greenMageSingle.png" />
+    <Content Include="Content\IceBoltSprite.png" />
+    <Content Include="Content\IceMap.txt" />
+    <Content Include="Content\IceShield.png" />
+    <Content Include="Content\LoserBackground.png" />
+    <Content Include="Content\MageWarsBackground.jpg" />
+    <Content Include="Content\MeteorSprite.png" />
+    <Content Include="Content\PoisonBoltSprite.png" />
+    <Content Include="Content\PoisonMap.txt" />
+    <Content Include="Content\PoisonShield.png" />
+    <Content Include="Content\red2.png" />
+    <Content Include="Content\RedCastle.png" />
+    <Content Include="Content\RedEnemyTile.png" />
+    <Content Include="Content\RedMage.png" />
+    <Content Include="Content\redMageSingle.png" />
+    <Content Include="Content\rockTile.jpg" />
+    <Content Include="Content\skills\fire_fireball_active.png" />
+    <Content Include="Content\skills\fire_fireball_inactive.png" />
+    <Content Include="Content\skills\fire_fireball_selected.png" />
+    <Content Include="Content\skills\fire_fireshield_active.png" />
+    <Content Include="Content\skills\fire_fireshield_inactive.png" />
+    <Content Include="Content\skills\fire_fireshield_selected.png" />
+    <Content Include="Content\skills\fire_meteor_active.png" />
+    <Content Include="Content\skills\fire_meteor_inactive.png" />
+    <Content Include="Content\skills\fire_meteor_selected.png" />
+    <Content Include="Content\skills\ice_hurricane_active.png" />
+    <Content Include="Content\skills\ice_hurricane_inactive.png" />
+    <Content Include="Content\skills\ice_hurricane_selected.png" />
+    <Content Include="Content\skills\ice_icebolt_active.png" />
+    <Content Include="Content\skills\ice_icebolt_inactive.png" />
+    <Content Include="Content\skills\ice_icebolt_selected.png" />
+    <Content Include="Content\skills\ice_iceshield_active.png" />
+    <Content Include="Content\skills\ice_iceshield_inactive.png" />
+    <Content Include="Content\skills\ice_iceshield_selected.png" />
+    <Content Include="Content\skills\poison_decay_active.png" />
+    <Content Include="Content\skills\poison_decay_inactive.png" />
+    <Content Include="Content\skills\poison_decay_selected.png" />
+    <Content Include="Content\skills\poison_poisonbolt_active.png" />
+    <Content Include="Content\skills\poison_poisonbolt_inactive.png" />
+    <Content Include="Content\skills\poison_poisonbolt_selected.png" />
+    <Content Include="Content\skills\poison_poisonshield_active.png" />
+    <Content Include="Content\skills\poison_poisonshield_inactive.png" />
+    <Content Include="Content\skills\poison_poisonshield_selected.png" />
+    <Content Include="Content\SpellInfoWindow.png" />
+    <Content Include="Content\textureFloor.png" />
+    <Content Include="Content\TornadoSprite.png" />
+    <Content Include="Content\youwin.png" />
+    <Content Include="Icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <MonoGameContentReference Include="Content\Content.mgcb" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ModelDiagram.cd" />
+    <None Include="StateDiagram.cd" />
+    <None Include="Content\Font.spritefont" />
+    <None Include="ViewDiagram.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\MonoGame\v3.0\MonoGame.Content.Builder.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
